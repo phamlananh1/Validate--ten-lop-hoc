@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function lophoc(text) {
+        patt = /^[ACP](?:[0-9]){4}[GHIKLM]$/;
+        if (patt.test(text)) {
+            alert("Đúng định dạng");
+        } else {
+            alert("Không đúng định dạng");
+        }
+    }
+    var text = prompt("Nhập tên lớp");
+    var resul = lophoc(text);
+    alert(resul);
+</script>
+</body>
+</html>
